@@ -1,0 +1,494 @@
+:root{
+    --primary-color:#fe0f0fed;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #000;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img{
+    width:100%;
+}
+
+ul {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+p{
+    padding: 0.4rem 0;
+}
+
+/****************  ShowCase Section  *******************/
+
+#showcase{
+    background: url('../img/showcaseBackground.jpg') no-repeat center center/cover;
+    height: 93vh;
+    width: 100%;
+    position: relative;
+    box-shadow: inset 50px 50px 150px 8px #000000, inset -50px -50px 150px 8px #000000;
+    z-index: 2;
+    border-bottom: 8px solid #151414;
+}
+
+#showcase::after{
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #000;
+    z-index: -1;
+    opacity: 0.5;
+    
+}
+
+.showcase-top{
+    position: relative;
+    height: 90px;
+}
+
+.showcase-top img{
+    position: absolute;
+    width: 180px;
+    left: 15%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* mix-blend-mode:multiply; */
+}
+
+.showcase-top-right{
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+select{
+    padding: 0.3rem 0.5rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #000;
+    border: none;
+    padding-left: 0;
+    outline: none;
+}
+
+.language{
+    display: inline-block;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    padding: 0 5px;
+}
+
+.showcase-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 8rem;
+}
+
+.showcase-content h1{
+    font-size: 3rem;
+    font-weight: 900;
+    padding: 1rem;
+    line-height: 1;
+}
+
+.showcase-content p{
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.showcase-content form{
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.showcase-content form input{
+    padding:1rem 1rem;
+    font-size: 1.2rem;
+    border-radius: 3px;
+    /* mix-blend-mode: multiply; */
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    /* opacity: 0.5; */
+    outline: none;
+    border-style: none;
+    border: 1px solid rgb(102, 97, 97);
+}
+
+::placeholder{
+    color: rgb(190, 186, 186);
+}
+
+/************************  TV Section  ********************************/
+#tv-section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    grid-gap: 1rem;
+}
+
+#tv{
+    border-bottom: 8px solid #151414;
+    padding: 3rem;
+}
+
+#tv-section .tv{
+    position: relative;
+}
+#tv-section .tv-video{
+    position: absolute;
+    width: 25.9rem;
+    top: 21%;
+    left: 13.4%;
+}
+
+
+
+/**************************  Download Section  ******************************/
+#download{
+    border-bottom: 8px solid #151414;
+}
+
+.download-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    grid-gap: 1rem;
+}
+
+.download-left{
+    position: relative;
+}
+
+.download-left-bottom{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #000;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    width: 60%;
+    margin: auto;
+    border: 1px solid #706868;
+    border-radius: 3px;
+    padding: 5px 0px 5px 5px;
+}
+
+.download-left-bottom .strangersThingsImg{
+    max-width: 3rem;
+}
+
+.download-left-bottom p{
+    color: #2504fd;
+}
+
+
+
+/*******************************  Look Everywhere Section  **********************/
+#lookEverywhere{
+    padding: 3rem 3rem 8rem 3rem;
+    border-bottom: 8px solid #151414;
+}
+
+.lookEverywhere-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    grid-gap: 1rem;
+}
+
+.lookEverywhere-content-left{
+    text-align: left;
+}
+
+.lookEverywhere-content-right{
+    position: relative;
+}
+
+.lookEverywhere-content-right img{
+    position: absolute;
+    top: 83%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.lookEverywhere-content-right video{
+    max-width: 350px;
+}
+
+/*********************  Kids Profile Section  ***************************/
+#kidProfile{
+    padding: 3rem;
+    border-bottom: 8px solid #151414;
+}
+
+.kidProfile-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/***********************  FAQ section  ****************************/
+#faq{
+    padding: 3rem;
+}
+
+.faq-content h1{
+    text-align: center;
+    padding: 1rem;
+}
+
+.faq-content details{
+    padding: .5rem;
+}
+
+.faq-content details summary{
+    cursor: pointer;
+    background-color: #424040;
+    padding: 1.5rem;
+}
+
+.faq-content details summary:hover{
+    opacity: .7;
+}
+
+.faq-content details p{
+    background-color: #1c1a1a;
+    padding: 1.5rem;
+}
+
+
+/************************  Connect Section  *****************************/
+#connect {
+    border-bottom: 8px solid #151414;
+    padding: 3rem;
+}
+
+.connect-content .form{
+    width: 60%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.connect-content input {
+    padding: 1rem .5rem;
+    font-size: 1.2rem;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    outline: none;
+    border-style: none;
+    border: 1px solid rgb(102, 97, 97);
+}
+
+/************************  Footer Section  **********************/
+#footer{
+    padding: 3rem;
+}
+
+.footer-content p{
+    color: #bab3b3;
+    padding: .5rem .5rem .5rem 0;
+}
+
+.footer-content a{
+    color: #bab3b3;
+    text-decoration: underline;
+}
+
+.footer-cols{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15%, 1fr));
+    gap: 1rem;
+}
+
+.footer-cols ul li{
+    padding: .5rem .5rem .5rem 0;
+}
+
+.footer-bottom{
+    padding: 1.5rem 0 1.5rem 0;
+}
+
+
+/************************  Utility Classes  ***********************/
+
+.container{
+    width: 75%;
+    margin: auto;
+}
+
+.btn{
+    background-color: var(--primary-color);
+    padding: 0.3rem 0.5rem;
+    font-size: 1rem;
+    margin-left: 1rem;
+    border-radius: 3px;
+    border-style: none;
+}
+
+.btn:hover{
+    opacity: .9;
+}
+
+.btn-icon{
+    padding-left: 1rem;
+}
+
+.btn-xl{
+    padding: 1rem 1rem;
+    font-size: 1.3rem;
+}
+
+.txt-xl{
+    font-size: 3rem;
+}
+
+.txt-lg {
+    font-size: 2rem;
+}
+
+.txt-md {
+    font-size: 1.5rem;
+}
+
+.txt-sm{
+    font-size: 1rem;
+}
+
+.txt-center{
+    text-align: center;
+}
+
+
+/************************ Media Query *****************************/
+
+@media (max-width:960px) {
+    .showcase {
+        height: 70vh;
+    }
+
+
+    .showcase-content h1 {
+        font-size: 2.5rem;
+        line-height: 1;
+    }
+
+    .showcase-content p {
+        font-size: 1.3rem;
+    }
+
+    .showcase-content form{
+        grid-template-columns: 2fr, 1fr;
+    }
+
+    .showcase-content form input{
+        padding: 0;
+    }
+
+    #tv-section{
+        grid-template-columns: 1fr;
+    }
+
+    .download-content{
+        grid-template-columns: 1fr;
+    }
+
+    .download-content-right{
+        grid-row: 1;
+    }
+
+    .lookEverywhere-content {
+        grid-template-columns: 1fr;
+    }
+
+    .kidProfile-content {
+        grid-template-columns: 1fr;
+    }
+
+    .kidProfile-content-right {
+        grid-row: 1;
+    }
+
+    .footer-cols {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    li{
+        padding: 0;
+    }
+
+    .btn-xl {
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+
+    .txt-xl {
+        font-size: 1.5rem;
+    }
+
+    .txt-lg {
+        font-size: 1.3rem;
+    }
+
+    .txt-md {
+        font-size: 1rem;
+    }
+}
+
+
+@media (max-width:700px) {
+
+    .showcase::after {
+        box-shadow: inset 80px 80px 250px #000, inset -80px -80px 250px #000;
+    }
+
+    .txt-xl {
+        font-size: 1.3rem;
+    }
+
+    .txt-lg {
+        font-size: 1rem;
+    }
+
+    .txt-md {
+        font-size: .8rem;
+    }
+
+    .container{
+        width: 90%;
+    }
+}
